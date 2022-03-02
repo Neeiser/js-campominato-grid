@@ -61,11 +61,23 @@ header {
 */
 
 main {
-    height: 700px;
+    height: 800px;
     background-color: #083b4c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-container{
+    width: 760px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes{
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
 }
