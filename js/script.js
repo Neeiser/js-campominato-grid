@@ -7,6 +7,7 @@ Get Element // Queryes
 
 // Header Get Element
 
+const modeSelecter = document.getElementById('difficulty-selecter');
 const hardModeSelected = document.getElementById('hard-mode');
 const normalModeSelected = document.getElementById('normal-mode');
 const easyModeSelected = document.getElementById('easy-mode');
@@ -17,6 +18,8 @@ const playButton = document.getElementById('play-btn');
 const boxContainer = document.querySelector('.box-container');
 
 
+
+
 /*
 -----------
 Event
@@ -24,14 +27,15 @@ Event
 */
 
 playButton.addEventListener('click', function(){
-    if (hardModeSelected==hardModeSelected.value){
+
+    if (modeSelecter.value == 'hard'){
         for (i = 1; i <= 100; i++) {
             const element = document.createElement('div');
             element.classList.add('boxes');
             element.innerHTML = i; /* debugger */
             boxContainer.append(element);
         }
-    } else if (normalModeSelected==normalModeSelected.value){
+    } else if (modeSelecter.value == 'normal'){
         for (i = 1; i <= 81; i++) {
             const element = document.createElement('div');
             element.classList.add('boxes');
