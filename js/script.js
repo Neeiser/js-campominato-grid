@@ -1,18 +1,18 @@
 
 /*
 -----------
-Queryes
+Get Element // Queryes
 -----------
 */
 
-// Header queryes
+// Header Get Element
 
-const hardModeSelected = document.querySelector('#hard-mode');
-const normalModeSelected = document.querySelector('#normal-mode');
-const easyModeSelected = document.querySelector('#easy-mode');
-const playButton = document.querySelector('#play-btn');
+const hardModeSelected = document.getElementById('hard-mode');
+const normalModeSelected = document.getElementById('normal-mode');
+const easyModeSelected = document.getElementById('easy-mode');
+const playButton = document.getElementById('play-btn');
 
-// Main queryes
+// Main Queryes
 
 const boxContainer = document.querySelector('.box-container');
 
