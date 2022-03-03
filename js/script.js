@@ -29,27 +29,33 @@ Event
 playButton.addEventListener('click', function(){
 
     if (modeSelecter.value == 'hard'){
-        boxContainer.innerHTML = "";
+
+        boxContainer.innerHTML = ""; /* BOX CLEARING */
+
         for (i = 1; i <= 100; i++) {
             const element = document.createElement('div');
             element.classList.add('boxes');
-            element.innerHTML = i; /* debugger */
+            element.innerHTML = i;
             boxContainer.append(element);
         }
     } else if (modeSelecter.value == 'normal'){
-        boxContainer.innerHTML = "";
+
+        boxContainer.innerHTML = ""; /* BOX CLEARING */
+
         for (i = 1; i <= 81; i++) {
             const element = document.createElement('div');
             element.classList.add('boxes');
-            element.innerHTML = i; /* debugger */
+            element.innerHTML = i;
             boxContainer.append(element);
         }
     } else {
-        boxContainer.innerHTML = "";
+
+        boxContainer.innerHTML = ""; /* BOX CLEARING */
+
         for (i = 1; i <= 49; i++) {
             const element = document.createElement('div');
             element.classList.add('boxes');
-            element.innerHTML = i; /* debugger */
+            element.innerHTML = i;
             boxContainer.append(element);
         }
     }
