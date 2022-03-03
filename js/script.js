@@ -31,6 +31,7 @@ playButton.addEventListener('click', function(){
     if (modeSelecter.value == 'hard'){
 
         boxContainer.innerHTML = ""; /* BOX CLEARING */
+        boxContainer.style.width = '760px'; /* RESIZE */
 
         for (i = 1; i <= 100; i++) {
             const element = document.createElement('div');
@@ -41,6 +42,7 @@ playButton.addEventListener('click', function(){
     } else if (modeSelecter.value == 'normal'){
 
         boxContainer.innerHTML = ""; /* BOX CLEARING */
+        boxContainer.style.width = '690px'; /* RESIZE */
 
         for (i = 1; i <= 81; i++) {
             const element = document.createElement('div');
@@ -51,6 +53,7 @@ playButton.addEventListener('click', function(){
     } else {
 
         boxContainer.innerHTML = ""; /* BOX CLEARING */
+        boxContainer.style.width = '550px'; /* RESIZE */
 
         for (i = 1; i <= 49; i++) {
             const element = document.createElement('div');
